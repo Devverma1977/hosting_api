@@ -16,7 +16,7 @@ const sendMail = async (req, res) => {
       from: req.body.sender,
       to: "worksdevloper@gmail.com",
       subject: "PortFolio Message",
-      text: `From: ${req.body.senderEmail}, Name: ${req.body.name}, Message: ${req.body.message}`,
+      text: `Froms: ${req.body.senderEmail}, Name: ${req.body.name}, Message: ${req.body.message}`,
       html: `<h3>From:</h3><h3>${req.body.senderEmail}</h3><p>Name: ${req.body.name}, Message: ${req.body.message}</p>`,
     });
 
